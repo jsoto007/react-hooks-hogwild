@@ -1,5 +1,4 @@
-import React, { Children, useState } from "react";
-import Details from "./Details";
+import React from "react";
 import HogTile from "./HogTile"
 
 function HogsCart( { hogs } ) {
