@@ -1,25 +1,14 @@
 import React, { Children, useState } from "react";
 import Details from "./Details";
+import HogTile from "./HogTile"
 
 function HogsCart( { hogs } ) {
-    const [displayData, setDisplayData] = useState(false)  
-  
-
     const displayedItems = hogs.map((item) => {
         return (
-            <div key={item.id}>
-                <h1>{item.name}</h1>
-                <img onClick={handleClick} src={item.image}/>
-                {displayData ? <Details item={item} /> : null}
-            </div>
+            <HogTile item={item}/>
         )
         
     })
-
-    function handleClick() {
-        setDisplayData((displayData) => !displayData)
-      
-    }
     return (
         <div>
             {displayedItems}

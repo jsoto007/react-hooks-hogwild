@@ -7,6 +7,7 @@ import pokers_data from "../porkers_data"
 import hogs from "../porkers_data";
 
 function App() {
+	
 	return (
 		<div className="App">
 			<Nav />
